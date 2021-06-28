@@ -1,10 +1,9 @@
-on: 
-  workflow_dispatch:
+on: workflow_dispatch
 
 name: download_registers_of_interests
 
 jobs:
-  download_and_prepare_osm:
+  download_registers_of_interests:
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
