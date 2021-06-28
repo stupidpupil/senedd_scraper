@@ -1,0 +1,63 @@
+on: 
+  workflow_dispatch:
+
+name: download_registers_of_interests
+
+jobs:
+  download_and_prepare_osm:
+    runs-on: macOS-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: r-lib/actions/setup-r@v1
+
+      - name: Query dependencies
+        run: |
+          install.packages('remotes')
+          saveRDS(remotes::dev_package_deps(dependencies = TRUE), ".github/depends.Rds", version = 2)
+          writeLines(sprintf("R-%i.%i", getRversion()$major, getRversion()$minor), ".github/R-version")
+        shell: Rscript {0}
+
+      - name: Restore R package cache
+        uses: actions/cache@v2
+        with:
+          path: ${{ env.R_LIBS_USER }}
+          key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
+          restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
+
+      - name: Install dependencies
+        run: |
+          install.packages(c("devtools", "rmarkdown"))
+          devtools::install_deps(dependencies = TRUE)
+        shell: Rscript {0}
+
+      - name: Checkout registers_of_interests branch
+        uses: actions/checkout@v2
+        with:
+          ref: registers_of_interests
+          path: registers_of_interests
+
+
+      - name: Fetch and write registers of interests
+        run: |
+          devtools::load_all()
+          members <- get_senedd_members()
+          members %>% write_csv("registers_of_interests/members.csv")
+          interests <- get_interests_for_members(members)
+          interests %>% 
+            left_join(members %>% select(SeneddID, Name, Party)) %>% 
+            select(SeneddID, Name, Party, everything()) %>% 
+            write_csv("registers_of_interests/interests.csv")
+          rmarkdown::render("registers_of_interests/README.Rmd")
+        shell: Rscript {0}
+
+      - name: Commit updated registers
+        run: |
+          cd registers_of_interests
+          git config user.name "Github Actions Bot"
+          git config user.email "<>"
+          git add .
+          git commit -m "Auto-updated"
+          git push origin registers_of_interests
+          cd ..
