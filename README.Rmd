@@ -1,0 +1,21 @@
+---
+title: "Registers of Interests"
+output:
+  md_document:
+    variant: gfm-yaml_metadata_block
+    preserve_yaml: false
+    toc: false
+    pandoc_args: ["--wrap=preserve"]
+---
+
+# Registers of Interests
+
+This repository contains Senedd Members' registers of interests, fetched from [senedd.wales](https://senedd.wales/).
+
+It was last updated `r Sys.time()  %>% strftime("%H:%M %Z on %d %B %Y", tz="Europe/London")`.
+
+The Senedd Scraper found `r members %>% nrow()` MSs and registers of interests for `r interests %>% group_by(SeneddID) %>% count() %>% nrow()` of them. (As of June 2021, these should both ideally be 60).
+
+# Land and property
+
+Of the `r interests %>% group_by(SeneddID) %>% count() %>% nrow()` registers found, `r interests %>% filter(CategoryID == 8, !is.na(EntrySubject), EntrySubject != "None") %>% group_by(SeneddID) %>% count() %>% nrow()` mentioned some sort of interest in land or property and `r interests %>% filter(CategoryID == 8, EntrySubject %>% str_detect(regex("(rent|tenant)", ignore_case=TRUE))) %>% group_by(SeneddID) %>% count() %>% nrow()` mentioned tenants or renting in that context.
