@@ -19,3 +19,9 @@ The Senedd Scraper found `r members %>% nrow()` MSs and registers of interests f
 # Land and property
 
 Of the `r interests %>% group_by(SeneddID) %>% count() %>% nrow()` registers found, `r interests %>% filter(CategoryID == 8, !is.na(EntrySubject), EntrySubject != "None") %>% group_by(SeneddID) %>% count() %>% nrow()` mentioned some sort of interest in land or property and `r interests %>% filter(CategoryID == 8, EntrySubject %>% str_detect(regex("(rent|tenant)", ignore_case=TRUE))) %>% group_by(SeneddID) %>% count() %>% nrow()` mentioned tenants or renting in that context.
+
+```{r warning = FALSE, message = FALSE, echo = FALSE, results = 'asis'}
+
+interests %>% filter(CategoryID == 8, !is.na(EntrySubject), EntrySubject != "None") %>% group_by(SeneddID) %>% summarise(Interest = paste(EntrySubject, collapse="\n")) %>% left_join(members %>% select(SeneddID, Name, Party)) %>% select(Name, Party, Interest) %>% (knitr::kable)
+
+```
