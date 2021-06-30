@@ -22,6 +22,9 @@ Of the `r interests %>% group_by(SeneddID) %>% count() %>% nrow()` registers fou
 
 ```{r warning = FALSE, message = FALSE, echo = FALSE, results = 'asis'}
 
-interests %>% filter(CategoryID == 8, !is.na(EntrySubject), EntrySubject != "None") %>% group_by(SeneddID) %>% summarise(Interest = paste(EntrySubject, collapse="\n")) %>% left_join(members %>% select(SeneddID, Name, Party)) %>% select(Name, Party, Interest) %>% (knitr::kable)
+interests %>% 
+filter(CategoryID == 8, !is.na(EntrySubject), EntrySubject != "None") %>% 
+group_by(SeneddID) %>% summarise(Interest = paste(EntrySubject, collapse="<br>")) %>% 
+left_join(members %>% select(SeneddID, Name, Party)) %>% select(Name, Party, Interest) %>% (knitr::kable)
 
 ```
