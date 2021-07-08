@@ -2,13 +2,13 @@
 
 This repository contains Senedd Members’ registers of interests, fetched from [senedd.wales](https://senedd.wales/).
 
-It was last updated 18:17 BST on 07 July 2021.
+It was last updated 18:12 BST on 08 July 2021.
 
-The Senedd Scraper found 60 MSs and registers of interests for 33 of them. (As of June 2021, these should both ideally be 60).
+The Senedd Scraper found 60 MSs and registers of interests for 36 of them. (As of June 2021, these should both ideally be 60).
 
 # Land and property
 
-Of the 33 registers found, 11 mentioned some sort of interest in land or property and 2 mentioned tenants or renting in that context.
+Of the 36 registers found, 13 mentioned some sort of interest in land or property and 3 mentioned tenants or renting in that context.
 
 | Name                 | Party                    | Interest                                                                                                                                                                                                          |
 | :------------------- | :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -19,7 +19,9 @@ Of the 33 registers found, 11 mentioned some sort of interest in land or propert
 | Ken Skates           | Welsh Labour             | Holiday home in France (occasional rental).                                                                                                                                                                       |
 | Mabon ap Gwynfor     | Plaid Cymru              | Member and spouse own a house and 10 acres in Cynwyd, Denbighshire.<br>Member and spouse own a house in Aberystwyth.                                                                                              |
 | Natasha Asghar       | Welsh Conservative Party | Memorandum of trust in place for 3 residential properties (2 in Newport and 1 in London).                                                                                                                         |
+| Llyr Gruffydd        | Plaid Cymru              | Member owns a rented property in Ruthin.                                                                                                                                                                          |
 | Peter Fox            | Welsh Conservative Party | Residential property in Bridgend owned by Member and used by family member.                                                                                                                                       |
+| Hannah Blythyn       | Welsh Labour             | Static Caravan (for private use) - Anglesey                                                                                                                                                                       |
 | James Evans          | Welsh Conservative Party | Member and spouse own Middlewood Farm, Bwlch.                                                                                                                                                                     |
 | Rhys ab Owen         | Plaid Cymru              | One residential rented property in Cardiff                                                                                                                                                                        |
 | Sam Rowlands         | Welsh Conservative Party | Residential property in Abergele                                                                                                                                                                                  |
