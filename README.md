@@ -2,13 +2,13 @@
 
 This repository contains Senedd Members’ registers of interests, fetched from [senedd.wales](https://senedd.wales/).
 
-It was last updated 18:07 BST on 09 July 2021.
+It was last updated 18:09 BST on 12 July 2021.
 
-The Senedd Scraper found 60 MSs and registers of interests for 41 of them. (As of June 2021, these should both ideally be 60).
+The Senedd Scraper found 60 MSs and registers of interests for 42 of them. (As of June 2021, these should both ideally be 60).
 
 # Land and property
 
-Of the 41 registers found, 15 mentioned some sort of interest in land or property and 4 mentioned tenants or renting in that context.
+Of the 42 registers found, 15 mentioned some sort of interest in land or property and 4 mentioned tenants or renting in that context.
 
 | Name                 | Party                    | Interest                                                                                                                                                                                                          |
 | :------------------- | :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
