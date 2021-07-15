@@ -41,6 +41,25 @@ SeneddID,Name,Party,CategoryCaption,CategoryID,EntryInRespectOf,EntrySubject
 269,Mabon ap Gwynfor,Plaid Cymru,11. Record of membership of societies,11,NA,CND Cymru
 269,Mabon ap Gwynfor,Plaid Cymru,11. Record of membership of societies,11,NA,Cymdeithas y Cymod (The Fellowship of Reconciliation in Wales)
 269,Mabon ap Gwynfor,Plaid Cymru,12. Record of the employment of family members,12,None,None
+2717,Rhun ap Iorwerth,Plaid Cymru,1. Category 1: Directorships,1,Member,Director – Rhun ap Iorwerth Cyf – Journalism company (SO 4.3 - Band 1 – Less than 5 hours per week)
+2717,Rhun ap Iorwerth,Plaid Cymru,1. Category 1: Directorships,1,Member,Director – Paradwys Cyf – Property company (SO 4.3 - Band 1 – Less than 5 hours per week)
+2717,Rhun ap Iorwerth,Plaid Cymru,1. Category 1: Directorships,1,Spouse,Director – Paradwys Cyf – Property company
+2717,Rhun ap Iorwerth,Plaid Cymru,1. Category 1: Directorships,1,Spouse,Director - Ateb Cyntaf Cyf - Language services
+2717,Rhun ap Iorwerth,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Member,"Occasional work presenting public events, and occasional contributions to television / radio programmes (SO 4.3 - Band 1 – Less than 5 hours per week)"
+2717,Rhun ap Iorwerth,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Spouse,Communications Manager – Cartrefi Cymunedol Gwynedd - Housing Association (ceased)
+2717,Rhun ap Iorwerth,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Spouse,Executive Director - Ateb Cyntaf Cyf - Language services
+2717,Rhun ap Iorwerth,Plaid Cymru,3. Category 3: Names of clients,3,None,None
+2717,Rhun ap Iorwerth,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,None,None
+2717,Rhun ap Iorwerth,Plaid Cymru,5. Category 5: Remuneration or other material benefit,5,None,None
+2717,Rhun ap Iorwerth,Plaid Cymru,6. Category 6: Financial sponsorship,6,Candidate,Ynys Môn election costs for 2016 election were covered by Plaid Cymru
+2717,Rhun ap Iorwerth,Plaid Cymru,7. Category 7: Overseas visits,7,None,None
+2717,Rhun ap Iorwerth,Plaid Cymru,8. Category 8: Land and property,8,Member and Spouse,Member and spouse own rental property in Cardiff
+2717,Rhun ap Iorwerth,Plaid Cymru,9. Category 9: Shareholdings,9,None,None
+2717,Rhun ap Iorwerth,Plaid Cymru,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Spouse,Member - Grŵp Cynefin Board
+2717,Rhun ap Iorwerth,Plaid Cymru,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Governor of Ysgol Gyfun Llangefni
+2717,Rhun ap Iorwerth,Plaid Cymru,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron - Wales Policy Forum
+2717,Rhun ap Iorwerth,Plaid Cymru,11. Record of membership of societies,11,NA,None
+2717,Rhun ap Iorwerth,Plaid Cymru,12. Record of the employment of family members,12,None,None
 336,Natasha Asghar,Welsh Conservative Party,1. Category 1: Directorships,1,Member,Unique Xavier – Property Management (SO 4.3 – Band 1 – Less than 5 hours per week).
 336,Natasha Asghar,Welsh Conservative Party,"2. Category 2: Remunerated employment, office, profession etc",2,None,None
 336,Natasha Asghar,Welsh Conservative Party,3. Category 3: Names of clients,3,None,None
@@ -449,6 +468,43 @@ Siop Griffiths, Penygroes"
 156,Jane Hutt,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Soroptimists International (Barry and District)
 156,Jane Hutt,Welsh Labour,11. Record of membership of societies,11,NA,None
 156,Jane Hutt,Welsh Labour,12. Record of the employment of family members,12,None,None
+5053,Huw Irranca-Davies,Welsh Labour,1. Category 1: Directorships,1,None,None
+5053,Huw Irranca-Davies,Welsh Labour,"2. Category 2: Remunerated employment, office, profession etc",2,Spouse,Employed as a Radiographer for Powys Local Health Board and Swansea Bay University Health Board
+5053,Huw Irranca-Davies,Welsh Labour,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Occasional survey work of no more than one hour once a month (SO 4.3 - Band 1 - Less than 5 hours per week)
+5053,Huw Irranca-Davies,Welsh Labour,3. Category 3: Names of clients,3,None,None
+5053,Huw Irranca-Davies,Welsh Labour,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,None,None
+5053,Huw Irranca-Davies,Welsh Labour,5. Category 5: Remuneration or other material benefit,5,None,None
+5053,Huw Irranca-Davies,Welsh Labour,6. Category 6: Financial sponsorship,6,Member,"All 2021 Senedd election expenses met by Ogmore Constituency Labour Party, with donations from GMB, Unite Wales, Co-operative Party, J Joshi, R Joshi and S Joshi and individual party members and supporters"
+5053,Huw Irranca-Davies,Welsh Labour,7. Category 7: Overseas visits,7,None,None
+5053,Huw Irranca-Davies,Welsh Labour,8. Category 8: Land and property,8,Member and Spouse,Joint ownership of a residential property in the Swansea area from which rental income is derived
+5053,Huw Irranca-Davies,Welsh Labour,9. Category 9: Shareholdings,9,None,None
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member of SERA Executive - Labour's Environmental Campaign organisation
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron – Brynawel Rehab
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,President - Ogmore Valley Silver Band
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,President - Garw Valley Ladies Choir
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,President - Ogmore Valley Male Voice Choir
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Vice President - Maesteg Amateur Operatic Society
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Joint membership - Friends of Côr Bro Ogwr
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Vice President - Y BONT
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron - Maesteg RFC
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron - Maesteg Gleemen MVC
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Honorary Member - Ogmore Valley Community Regeneration Association (OVCRA)
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Vice President - Ramblers Cymru
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,President - Cor Meibion Maesteg a'r Cylch
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron - Mid Glamorgan Mixed Choir
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Bevan Foundation
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Honorary associate - British Veterinary Association
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron - UK Friends Bereaved Families Forum
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Vice President - Nantymoel Boys and Girls Club
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Chair - Co-operative Assembly Group
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Trustee - Caerau Men's Shed
+5053,Huw Irranca-Davies,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Chair - Strategic Forum on Regional Investment in Wales (SFRIW)
+5053,Huw Irranca-Davies,Welsh Labour,11. Record of membership of societies,11,NA,Member - Co-operative Party
+5053,Huw Irranca-Davies,Welsh Labour,11. Record of membership of societies,11,NA,Member - Fabians
+5053,Huw Irranca-Davies,Welsh Labour,11. Record of membership of societies,11,NA,Member - GMB
+5053,Huw Irranca-Davies,Welsh Labour,11. Record of membership of societies,11,NA,Honorary Member - Maesteg Rotary Club
+5053,Huw Irranca-Davies,Welsh Labour,11. Record of membership of societies,11,NA,Member - UNITE
+5053,Huw Irranca-Davies,Welsh Labour,12. Record of the employment of family members,12,None,None
 157,Mark Isherwood,Welsh Conservative Party,1. Category 1: Directorships,1,None,None
 157,Mark Isherwood,Welsh Conservative Party,"2. Category 2: Remunerated employment, office, profession etc",2,Spouse,Employed by Mark Isherwood MS as a Constituency Assistant (5 hours per week)
 157,Mark Isherwood,Welsh Conservative Party,3. Category 3: Names of clients,3,None,None
@@ -626,6 +682,23 @@ Siop Griffiths, Penygroes"
 245,Julie Morgan,Welsh Labour,11. Record of membership of societies,11,NA,Vice-President - City Hospice
 245,Julie Morgan,Welsh Labour,11. Record of membership of societies,11,NA,Patron - Ethnic Minority Welsh Women Achievement Association (EMWWAA)
 245,Julie Morgan,Welsh Labour,12. Record of the employment of family members,12,None,None
+8594,Sarah Murphy,Welsh Labour,1. Category 1: Directorships,1,None,None
+8594,Sarah Murphy,Welsh Labour,"2. Category 2: Remunerated employment, office, profession etc",2,None,None
+8594,Sarah Murphy,Welsh Labour,3. Category 3: Names of clients,3,None,None
+8594,Sarah Murphy,Welsh Labour,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,None,None
+8594,Sarah Murphy,Welsh Labour,5. Category 5: Remuneration or other material benefit,5,None,None
+8594,Sarah Murphy,Welsh Labour,6. Category 6: Financial sponsorship,6,Candidate,"All 2021 Senedd election expenses paid by Bridgend Constituency Labour Party, including donations from Unison, GMB, The Communication Workers Union, Fire Brigades Union and Co-operative Party. Donations-in-kind received from Unite the Union and Community Union."
+8594,Sarah Murphy,Welsh Labour,7. Category 7: Overseas visits,7,None,None
+8594,Sarah Murphy,Welsh Labour,8. Category 8: Land and property,8,None,None
+8594,Sarah Murphy,Welsh Labour,9. Category 9: Shareholdings,9,None,None
+8594,Sarah Murphy,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Bridgend Lifesavers Credit Union
+8594,Sarah Murphy,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Unite the Union
+8594,Sarah Murphy,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Unison
+8594,Sarah Murphy,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - GMB Union
+8594,Sarah Murphy,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - CWU
+8594,Sarah Murphy,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Co-operative Party
+8594,Sarah Murphy,Welsh Labour,11. Record of membership of societies,11,NA,None
+8594,Sarah Murphy,Welsh Labour,12. Record of the employment of family members,12,None,None
 174,Lynne Neagle,Welsh Labour,1. Category 1: Directorships,1,None,None
 174,Lynne Neagle,Welsh Labour,"2. Category 2: Remunerated employment, office, profession etc",2,None,None
 174,Lynne Neagle,Welsh Labour,3. Category 3: Names of clients,3,None,None
