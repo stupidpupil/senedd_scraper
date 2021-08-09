@@ -25,7 +25,7 @@ SeneddID,Name,Party,CategoryCaption,CategoryID,EntryInRespectOf,EntrySubject
 321,Mick Antoniw,Welsh Labour,11. Record of membership of societies,11,NA,None
 321,Mick Antoniw,Welsh Labour,12. Record of the employment of family members,12,None,None
 269,Mabon ap Gwynfor,Plaid Cymru,1. Category 1: Directorships,1,None,None
-269,Mabon ap Gwynfor,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Councillor – Denbighshire County Council (S.O. 4.3 - Band 2 - Between 5 and 20 hours a week).
+269,Mabon ap Gwynfor,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Councillor – Denbighshire County Council (S.O. 4.3 - Band 2 - Between 5 and 20 hours a week) (ceased).
 269,Mabon ap Gwynfor,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Spouse,Advocacy Projecct Manager with National Youth Advocacy Services (advocacy charity).
 269,Mabon ap Gwynfor,Plaid Cymru,3. Category 3: Names of clients,3,None,None
 269,Mabon ap Gwynfor,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,None,None
@@ -781,6 +781,7 @@ Siop Griffiths, Penygroes"
 171,Darren Millar,Welsh Conservative Party,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,"Governor - St Brigid's School, Denbigh"
 171,Darren Millar,Welsh Conservative Party,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member and Spouse,Honorary Life Member - Welsh Mountain Zoo
 171,Darren Millar,Welsh Conservative Party,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Remembering Srebrenica Wales
+171,Darren Millar,Welsh Conservative Party,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Honorary Member - Red Squirrels Trust Wales
 171,Darren Millar,Welsh Conservative Party,11. Record of membership of societies,11,NA,Colwyn Bay Rotary Club
 171,Darren Millar,Welsh Conservative Party,11. Record of membership of societies,11,NA,Rhos-on-Sea Cricket Club
 171,Darren Millar,Welsh Conservative Party,11. Record of membership of societies,11,NA,"National Club, London"
