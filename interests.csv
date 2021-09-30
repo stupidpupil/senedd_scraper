@@ -1,8 +1,8 @@
 SeneddID,Name,Party,CategoryCaption,CategoryID,EntryInRespectOf,EntrySubject
 8625,Rhys ab Owen,Plaid Cymru,1. Category 1: Directorships,1,None,None
-8625,Rhys ab Owen,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,None,None
-8625,Rhys ab Owen,Plaid Cymru,3. Category 3: Names of clients,3,Member,Self-employed Barrister (SO 4.3 - Band 1 – Less than 5 hours a week)
-8625,Rhys ab Owen,Plaid Cymru,3. Category 3: Names of clients,3,Spouse,"Clerk, Welsh Parliament"
+8625,Rhys ab Owen,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Self-employed Barrister (SO 4.3 - Band 1 – Less than 5 hours a week)
+8625,Rhys ab Owen,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Spouse,"Clerk, Welsh Parliament"
+8625,Rhys ab Owen,Plaid Cymru,3. Category 3: Names of clients,3,None,None
 8625,Rhys ab Owen,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,None,None
 8625,Rhys ab Owen,Plaid Cymru,5. Category 5: Remuneration or other material benefit,5,None,None
 8625,Rhys ab Owen,Plaid Cymru,6. Category 6: Financial sponsorship,6,Member,All electoral costs paid for by Plaid Cymru
@@ -724,6 +724,18 @@ Siop Griffiths, Penygroes"
 4562,Laura Anne Jones,Welsh Conservative Party,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,None,None
 4562,Laura Anne Jones,Welsh Conservative Party,11. Record of membership of societies,11,NA,None
 4562,Laura Anne Jones,Welsh Conservative Party,12. Record of the employment of family members,12,None,None
+8642,Samuel Kurtz,Welsh Conservative Party,1. Category 1: Directorships,1,Member,Director - Wales Federation of Young Farmers Clubs (SO 4.3 - Band 1 – Less than 5 hours per week)
+8642,Samuel Kurtz,Welsh Conservative Party,"2. Category 2: Remunerated employment, office, profession etc",2,Member,"Councillor - Pembrokeshire County Council (SO 4.3 - Band 1: Less than 5 hours per week) (Councillor salary donated to local groups, charities and organisations)"
+8642,Samuel Kurtz,Welsh Conservative Party,3. Category 3: Names of clients,3,None,None
+8642,Samuel Kurtz,Welsh Conservative Party,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Ticket and hospitality for Wales v Kazakhstan on 17 September 2021 from Football Association Wales
+8642,Samuel Kurtz,Welsh Conservative Party,5. Category 5: Remuneration or other material benefit,5,None,None
+8642,Samuel Kurtz,Welsh Conservative Party,6. Category 6: Financial sponsorship,6,Member,All expenses for 2021 Senedd election paid by Welsh Conservative Party
+8642,Samuel Kurtz,Welsh Conservative Party,7. Category 7: Overseas visits,7,None,None
+8642,Samuel Kurtz,Welsh Conservative Party,8. Category 8: Land and property,8,None,None
+8642,Samuel Kurtz,Welsh Conservative Party,9. Category 9: Shareholdings,9,None,None
+8642,Samuel Kurtz,Welsh Conservative Party,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,None,None
+8642,Samuel Kurtz,Welsh Conservative Party,11. Record of membership of societies,11,NA,Member - Vice Chairman - Pembrokeshire Young Farmers Club
+8642,Samuel Kurtz,Welsh Conservative Party,12. Record of the employment of family members,12,None,None
 5021,Jeremy Miles,Welsh Labour,1. Category 1: Directorships,1,None,None
 5021,Jeremy Miles,Welsh Labour,"2. Category 2: Remunerated employment, office, profession etc",2,None,None
 5021,Jeremy Miles,Welsh Labour,3. Category 3: Names of clients,3,None,None
