@@ -6,6 +6,8 @@ It was last updated 18:05 BST on 13 October 2021.
 
 The Senedd Scraper found 60 MSs and registers of interests for 60 of them. (As of June 2021, these should both ideally be 60).
 
+[You can view all these registers in a single table here.](interests.csv)
+
 # Land and property
 
 Of the 60 registers found, 22 mentioned some sort of interest in land or property and 9 mentioned tenants or renting in that context.
