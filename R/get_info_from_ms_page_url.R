@@ -4,8 +4,13 @@ get_info_from_ms_page_url <- function(ms_page_url, ms_welsh_page_url=NULL){
   ret_info <- list()
 
   if(!is.null(ms_welsh_page_url)){
-    welsh_info <- get_info_from_ms_page_url(ms_welsh_page_url)
-    ret_info$TitlesWelsh <- welsh_info$Titles
+    ret_info$TitlesWelsh <- NA_character_
+    tryCatch({
+      welsh_info <- get_info_from_ms_page_url(ms_welsh_page_url)
+      ret_info$TitlesWelsh <- welsh_info$Titles
+    },
+    error=function(err){}
+    )
   }
 
   # Generally you can just use https://business.senedd.wales/mgRofI.aspx?UID=

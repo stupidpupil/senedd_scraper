@@ -36,7 +36,7 @@ get_senedd_members <- function(extra_info=FALSE){
     inf <- get_info_from_ms_page_url(members[[mi, 'LinkURL']], members[[mi, 'LinkURLWelsh']]) 
     
     inf_fields <- c(
-      'Titles',
+      'Titles', 'TitlesWelsh',
       'SeneddEmail', 'SeneddPhone', 'OfficePhone',
       'WelshGovernmentURL',
       'TwitterURL', 'FacebookURL', 'OtherWebsiteURLs',
