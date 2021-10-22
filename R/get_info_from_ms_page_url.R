@@ -32,7 +32,7 @@ get_info_from_ms_page_url <- function(ms_page_url){
       str_replace("^mailto:", "")
 
   ret_info$SeneddEmail <-
-    ret_info$Emails[ret_info$Emails %>% str_detect("senedd\\.wales$")] %>% first()
+    ret_info$Emails[ret_info$Emails %>% str_detect(regex("senedd\\.wales$", ignore_case=TRUE))] %>% first()
 
   ret_info$Phones <- ms_page %>%
     html_nodes(xpath=paste0('//a[contains(@title, "Call ', ret_info$NameWithMSSuffix,'")]')) %>% html_attr("href") %>%
