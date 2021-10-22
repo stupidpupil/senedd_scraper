@@ -43,7 +43,14 @@ get_senedd_members <- function(extra_info=FALSE){
       )
 
     for(fl in inf_fields){
-      members[[mi, fl]] <- inf[[fl]] %>% paste0(collapse="\n")
+
+      vl <- inf[[fl]]
+
+      if(length(vl) > 1){
+        vl <- paste0(vl, collapse="\n")
+      }
+
+      members[[mi, fl]] <- vl
     }
   }
 
