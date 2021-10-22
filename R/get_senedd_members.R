@@ -38,7 +38,7 @@ get_senedd_members <- function(extra_info=FALSE){
     inf_fields <- c(
       'Titles', 'TitlesWelsh',
       'SeneddEmail', 'SeneddPhone', 'OfficePhone',
-      'WelshGovernmentURL',
+      'IsMinister', 'WelshGovernmentURL',
       'TwitterURL', 'FacebookURL', 'OtherWebsiteURLs',
       'PersonalHistory', 'ProfessionalBackground', 'PoliticalHistory'
       )

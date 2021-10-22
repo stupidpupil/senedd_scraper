@@ -84,6 +84,8 @@ get_info_from_ms_page_url <- function(ms_page_url, ms_welsh_page_url=NULL){
     str_extract(regex("(?<=Political[\n\\s]history).+?(?=(^Register[\n\\s]of|\\Z))", multiline=TRUE, dotall=TRUE)) %>%
     str_replace_all("[\\n\\s]+", " ") %>% str_trim()
 
+  ret_info$IsMinister = (str_detect(ret_info$Titles, "Minister") | str_detect(ret_info$TitlesWelsh, "(Gw|W)einidog"))
+
   for(key in names(ret_info)){
     if(identical(ret_info[[key]], character(0))){
       ret_info[key] <- NA_character_
