@@ -24,6 +24,9 @@ get_info_from_ms_page_url <- function(ms_page_url){
 
   ret_info$Titles <- if_else(ret_info$Titles == "", NA_character_, ret_info$Titles)
 
+  ret_info$WelshGovernmentURL <- ms_page %>% # For ministers
+    html_node(xpath='//div[contains(@class, "person-details-details-container__key-info")]//a[contains(@href, "gov.wales")]') %>% html_attr("href")
+
   ret_info$Emails <- ms_page %>%
     html_nodes(xpath=paste0('//a[contains(@title, "Send email to ', ret_info$NameWithMSSuffix,'")]')) %>% html_attr("href") %>%
       str_replace("^mailto:", "")
