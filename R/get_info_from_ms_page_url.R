@@ -1,7 +1,12 @@
-get_info_from_ms_page_url <- function(ms_page_url){
+get_info_from_ms_page_url <- function(ms_page_url, ms_welsh_page_url=NULL){
   ms_page <- read_html(ms_page_url)
 
   ret_info <- list()
+
+  if(!is.null(ms_welsh_page_url)){
+    welsh_info <- get_info_from_ms_page_url(ms_welsh_page_url)
+    ret_info$TitlesWelsh <- welsh_info$Titles
+  }
 
   # Generally you can just use https://business.senedd.wales/mgRofI.aspx?UID=
   ret_info$RegisterURL <- ms_page %>% 

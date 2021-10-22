@@ -12,18 +12,19 @@ get_senedd_members <- function(extra_info=FALSE){
       Region = Region %>% str_replace_all("[\\(\\)]", "")
       )
 
-  ret$LinkURL <- table_el %>% html_nodes("a[href^=mgUserInfo]") %>% html_attr('href')
+  ret$LinkURLPath <- table_el %>% html_nodes("a[href^=mgUserInfo]") %>% html_attr('href')
   ret$PhotographURL <- table_el %>% html_nodes("img") %>% html_attr('src')
 
   ret <- ret %>%
     mutate(
-      LinkURL = paste0("https://business.senedd.wales/", LinkURL),
+      LinkURL = paste0("https://business.senedd.wales/", LinkURLPath),
+      LinkURLWelsh = paste0("https://busnes.senedd.cymru/", LinkURLPath),
       PhotographURL = paste0("https://business.senedd.wales/", PhotographURL),
       SeneddID =  (LinkURL %>% str_match("UID=(\\d+)$"))[,2],
       RegisterURL = paste0("https://business.senedd.wales/mgRofI.aspx?UID=", SeneddID)
       )
 
-  members <- ret %>% select(SeneddID, Name, LinkURL, PhotographURL, RegisterURL, Party, Constituency, Region)
+  members <- ret %>% select(SeneddID, Name, LinkURL, LinkURLWelsh, PhotographURL, RegisterURL, Party, Constituency, Region)
 
   if(!extra_info){
     return(members)
@@ -32,7 +33,7 @@ get_senedd_members <- function(extra_info=FALSE){
   for (mi in 1:nrow(members)) {
     print(paste0("Fetching extra info for ", members[[mi, 'Name']], "…"))
 
-    inf <- get_info_from_ms_page_url(members[[mi, 'LinkURL']]) 
+    inf <- get_info_from_ms_page_url(members[[mi, 'LinkURL']], members[[mi, 'LinkURLWelsh']]) 
     
     inf_fields <- c(
       'Titles',
