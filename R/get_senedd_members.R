@@ -1,4 +1,4 @@
-get_senedd_members <- function(){
+get_senedd_members <- function(extra_info=FALSE){
   table_el <- read_html("https://business.senedd.wales/mgMemberIndex.aspx?VW=TABLE&PIC=1") %>%
     html_node("#mgTable1")
 
@@ -8,7 +8,8 @@ get_senedd_members <- function(){
     rename(Party = `Political party`) %>%
     mutate(
       Name = (`Member of the Senedd` %>% str_match("^(.+?) MS\r"))[,2],
-      Party = (Party %>% str_match("^(.+?)\\("))[,2] %>% str_replace_all("Welsh Labour and Co-operative Party", "Welsh Labour")
+      Party = (Party %>% str_match("^(.+?)\\("))[,2] %>% str_replace_all("Welsh Labour and Co-operative Party", "Welsh Labour"),
+      Region = Region %>% str_replace_all("[\\(\\)]", "")
       )
 
   ret$LinkURL <- table_el %>% html_nodes("a[href^=mgUserInfo]") %>% html_attr('href')
@@ -22,6 +23,28 @@ get_senedd_members <- function(){
       RegisterURL = paste0("https://business.senedd.wales/mgRofI.aspx?UID=", SeneddID)
       )
 
-  ret %>% select(SeneddID, Name, LinkURL, PhotographURL, RegisterURL, Party, Constituency, Region)
+  members <- ret %>% select(SeneddID, Name, LinkURL, PhotographURL, RegisterURL, Party, Constituency, Region)
 
+  if(!extra_info){
+    return(members)
+  }
+
+  for (mi in 1:nrow(members)) {
+    print(paste0("Fetching extra info for ", members[[mi, 'Name']], "…"))
+
+    inf <- get_info_from_ms_page_url(members[[mi, 'LinkURL']]) 
+    
+    inf_fields <- c(
+      'Titles',
+      'SeneddEmail', 'SeneddPhone', 'OfficePhone',
+      'TwitterURL', 'FacebookURL', 'OtherWebsiteURLs',
+      'PersonalHistory', 'ProfessionalBackground', 'PoliticalHistory'
+      )
+
+    for(fl in inf_fields){
+      members[[mi, fl]] <- inf[[fl]] %>% paste0(collapse="\n")
+    }
+  }
+
+  return(members)
 }
