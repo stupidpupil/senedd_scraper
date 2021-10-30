@@ -86,6 +86,67 @@ get_info_from_ms_page_url <- function(ms_page_url, ms_welsh_page_url=NULL){
 
   ret_info$IsMinister = (str_detect(ret_info$Titles, "Minister") | str_detect(ret_info$TitlesWelsh, "(Gw|W)einidog"))
 
+
+  #
+  # Cross Party Groups
+  #
+
+  ret_info$CrossPartyGroups <- c()
+  ret_info$CrossPartyGroupsChairs <- c()
+
+  ob_lis <- ms_page %>% html_nodes("#outsideBodiesContent ul li")
+
+  if(!is.null(ob_lis)){
+    for(ob_li in ob_lis){
+      group_name <- html_node(ob_li, "a") %>% html_text() %>%
+        str_trim() %>%
+        str_replace("^(Cross Party )?(.+?)( Group)?$", "\\2")
+
+      ret_info$CrossPartyGroups <- c(ret_info$CrossPartyGroups, group_name)
+
+      if(ob_li %>% html_text() %>% str_detect("\\(Chair\\)")){
+        ret_info$CrossPartyGroupsChairs <- c(ret_info$CrossPartyGroupsChairs, group_name)
+      }
+
+    }
+
+    ret_info$CrossPartyGroups <- ret_info$CrossPartyGroups %>% unique()
+    ret_info$CrossPartyGroupsChairs <- ret_info$CrossPartyGroupsChairs %>% unique()
+  }
+
+  #
+  # Committees
+  #
+
+  ret_info$Committees <- c()
+  ret_info$CommitteesChairs <- c()
+
+  ob_lis <- ms_page %>% html_nodes("#membershipContent ul li")
+
+  if(!is.null(ob_lis)){
+    for(ob_li in ob_lis){
+      group_name <- html_node(ob_li, "a") %>% html_text() %>%
+        str_trim() %>%
+        str_replace("^((Special )?(Purpose )?Committee (for|on) (the )?)?(.+?)( Committee)?$", "\\6")
+
+      if(group_name %in% c('Plenary', "Chairs' Forum")){
+        next
+      }
+
+      ret_info$Committees <- c(ret_info$Committees, group_name)
+
+      if(ob_li %>% html_text() %>% str_detect("\\(Chair\\)")){
+        ret_info$CommitteesChairs <- c(ret_info$CommitteesChairs, group_name)
+      }
+
+    }
+
+    ret_info$Committees <- ret_info$Committees %>% unique()
+    ret_info$CommitteesChairs <- ret_info$CommitteesChairs %>% unique()
+  }
+
+
+
   for(key in names(ret_info)){
     if(identical(ret_info[[key]], character(0))){
       ret_info[key] <- NA_character_

@@ -40,6 +40,8 @@ get_senedd_members <- function(extra_info=FALSE){
       'SeneddEmail', 'SeneddPhone', 'OfficePhone',
       'IsMinister', 'WelshGovernmentURL',
       'TwitterURL', 'FacebookURL', 'OtherWebsiteURLs',
+      'CrossPartyGroups', 'CrossPartyGroupsChairs',
+      'Committees', 'CommitteesChairs',
       'PersonalHistory', 'ProfessionalBackground', 'PoliticalHistory'
       )
 
@@ -47,11 +49,15 @@ get_senedd_members <- function(extra_info=FALSE){
 
       vl <- inf[[fl]]
 
-      if(length(vl) > 1){
-        vl <- paste0(vl, collapse="\n")
-      }
+      if(!is.null(inf[[fl]])){
+        if(length(vl) > 1){
+          vl <- paste0(vl, collapse="\n")
+        }
 
-      members[[mi, fl]] <- vl
+        members[[mi, fl]] <- vl
+      } else{
+        members[[mi, fl]] <- NA_character_
+      }
     }
   }
 
