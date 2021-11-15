@@ -52,6 +52,12 @@ jobs:
             left_join(members %>% select(SeneddID, Name, Party)) %>% 
             select(SeneddID, Name, Party, everything()) %>% 
             write_csv("registers_of_interests/interests.csv")
+          members %>% 
+            do_gooder_table_from_senedd_members() %>% 
+            write_csv("registers_of_interests/members_for_do_gooder.csv")
+          readLines("registers_of_interests/members_for_do_gooder.csv") %>%
+            iconv(from="UTF-8", to="ISO-8859-1") %>%
+            writeLines("registers_of_interests/members_for_do_gooder.csv")
           rmarkdown::render("registers_of_interests/README.Rmd")
         shell: Rscript {0}
 

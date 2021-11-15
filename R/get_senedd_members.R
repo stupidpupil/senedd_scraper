@@ -9,6 +9,7 @@ get_senedd_members <- function(extra_info=FALSE){
     mutate(
       Name = (`Member of the Senedd` %>% str_match("^(.+?) MS\r"))[,2],
       Party = (Party %>% str_match("^(.+?)\\("))[,2] %>% str_replace_all("Welsh Labour and Co-operative Party", "Welsh Labour"),
+      Party = Party %>% str_replace_all(" Party$", ""),
       Region = Region %>% str_replace_all("[\\(\\)]", "")
       )
 
