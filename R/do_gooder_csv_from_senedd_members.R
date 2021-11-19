@@ -24,8 +24,7 @@ do_gooder_table_from_senedd_members <- function(senedd_members){
           SeneddConstituencyName,
           if_else(SeneddConstituencyName != SeneddConstituencyNameEnglish, paste0(" / ", SeneddConstituencyNameEnglish), ""),
           if_else(SeneddConstituencyName != SeneddConstituencyNameWelsh,   paste0(" / ", SeneddConstituencyNameWelsh), "")
-        ) %>%
-        str_replace_all("ŵ", "w") # HACK : DoGooder has significant encoding problems
+        )
       ) %>%
     arrange(
       DoGooderSeneddConstituency,
