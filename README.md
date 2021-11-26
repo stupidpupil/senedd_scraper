@@ -2,7 +2,7 @@
 
 This repository contains Senedd Members’ registers of interests, fetched from [senedd.wales](https://senedd.wales/).
 
-It was last updated 17:13 GMT on 25 November 2021.
+It was last updated 17:12 GMT on 26 November 2021.
 
 The Senedd Scraper found 60 MSs and registers of interests for 60 of them. (As of June 2021, these should both ideally be 60).
 
