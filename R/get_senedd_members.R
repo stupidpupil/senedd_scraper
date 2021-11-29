@@ -22,8 +22,8 @@ get_senedd_members <- function(extra_info=FALSE){
       SeneddID = (PhotographURL %>% str_match("/Info(\\d{8})/"))[,2] %>% as.integer %>% as.character(),
       RegisterURL = paste0("https://business.senedd.wales/mgRofI.aspx?UID=", SeneddID),
       LinkURLPath = me %>% html_node("a") %>% html_attr("href"),
-      LinkURL = paste0("https://business.senedd.wales/", LinkURLPath),
-      LinkURLWelsh = paste0("https://busnes.senedd.cymru/", LinkURLPath %>% str_replace_all("-ms", "-as"))
+      LinkURL = paste0("https://senedd.wales", LinkURLPath),
+      LinkURLWelsh = paste0("https://senedd.cymru", LinkURLPath %>% str_replace_all("/people/", "/pobl/")  %>% str_replace_all("-ms/", "-as/"))
     ))
   }
 
