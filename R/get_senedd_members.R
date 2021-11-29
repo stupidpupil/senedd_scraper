@@ -1,29 +1,36 @@
 get_senedd_members <- function(extra_info=FALSE){
-  table_el <- read_html("https://business.senedd.wales/mgMemberIndex.aspx?VW=TABLE&PIC=1") %>%
-    html_node("#mgTable1")
+  ret <- tibble()
 
-  ret <- table_el %>% html_table()
+  member_els <- read_html("https://senedd.wales/find-a-member-of-the-senedd/?VW=Table&PageSize=10000&Page=1&Culture=en-GB&IsSubSearch=False&IsPostcodeCrossConstituency=False&Postcode=&Name=&ShowAll=true&Region=&Constituency=&Constituency=&Constituency=&Constituency=&Constituency=&PartyFilterType=party&PoliticalParty=&PoliticalPartyGroup=&partyValueName=") %>% 
+    html_nodes(".person-search-result-item")
 
-  ret <- ret %>% 
-    rename(Party = `Political party`) %>%
-    mutate(
-      Name = (`Member of the Senedd` %>% str_match("^(.+?) MS\r"))[,2],
-      Party = (Party %>% str_match("^(.+?)\\("))[,2] %>% str_replace_all("Welsh Labour and Co-operative Party", "Welsh Labour"),
-      Party = Party %>% str_replace_all(" Party$", ""),
-      Region = Region %>% str_replace_all("[\\(\\)]", "")
-      )
+  clean_up_party <- function(party){
+    party %>% 
+      str_replace_all("Welsh Labour and Co-operative Party", "Welsh Labour") %>%
+      str_replace_all(" Party$", "")
+  }
 
-  ret$LinkURLPath <- table_el %>% html_nodes("a[href^=mgUserInfo]") %>% html_attr('href')
-  ret$PhotographURL <- table_el %>% html_nodes("img") %>% html_attr('src')
+  for(me in member_els){
+    item_text_nodes <- me %>% html_nodes(".person-search-result-item__text")
 
-  ret <- ret %>%
-    mutate(
+
+    ret <- ret %>% bind_rows(tibble(
+      Name = (item_text_nodes %>% nth(1) %>% html_text() %>% str_match("^(.+?) MS"))[,2],
+      Party = item_text_nodes %>% nth(3) %>% html_text() %>% clean_up_party,
+      ConstituencyOrRegion = item_text_nodes %>% nth(2) %>% html_text(),
+      PhotographURL = me %>% html_node("img") %>% html_attr("src"),
+      SeneddID = (PhotographURL %>% str_match("/Info(\\d{8})/"))[,2] %>% as.integer %>% as.character(),
+      RegisterURL = paste0("https://business.senedd.wales/mgRofI.aspx?UID=", SeneddID),
+      LinkURLPath = me %>% html_node("a") %>% html_attr("href"),
       LinkURL = paste0("https://business.senedd.wales/", LinkURLPath),
-      LinkURLWelsh = paste0("https://busnes.senedd.cymru/", LinkURLPath),
-      PhotographURL = paste0("https://business.senedd.wales/", PhotographURL),
-      SeneddID =  (LinkURL %>% str_match("UID=(\\d+)$"))[,2],
-      RegisterURL = paste0("https://business.senedd.wales/mgRofI.aspx?UID=", SeneddID)
-      )
+      LinkURLWelsh = paste0("https://busnes.senedd.cymru/", LinkURLPath %>% str_replace_all("-ms", "-as"))
+    ))
+  }
+
+  ret <- ret %>% mutate(
+    Constituency = if_else(ConstituencyOrRegion %in% senedd_constituencies()$SeneddConstituencyName, ConstituencyOrRegion, NA_character_),
+    Region = if_else(ConstituencyOrRegion %in% senedd_constituencies()$SeneddRegionName, ConstituencyOrRegion, NA_character_)
+  )
 
   members <- ret %>% select(SeneddID, Name, LinkURL, LinkURLWelsh, PhotographURL, RegisterURL, Party, Constituency, Region)
 
