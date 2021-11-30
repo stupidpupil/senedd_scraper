@@ -9,7 +9,7 @@ do_gooder_table_from_senedd_members <- function(senedd_members){
       SeneddConstituencyName = if_else(!IsRegional, Constituency, SeneddConstituencyName),
       DoGooderExtraInfo = 
               paste0(Party, " ",
-                if_else(IsRegional == "",
+                if_else(IsRegional,
                   paste0("regional MS for ", Region),
                   paste0("MS for ", Constituency)
                 )
