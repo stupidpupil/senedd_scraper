@@ -2,19 +2,18 @@
 
 This repository contains Senedd Members’ registers of interests, fetched from [senedd.wales](https://senedd.wales/).
 
-It was last updated 17:12 GMT on 16 December 2021.
+It was last updated 17:09 GMT on 17 December 2021.
 
-The Senedd Scraper found 60 MSs and registers of interests for 60 of them. (As of June 2021, these should both ideally be 60).
+The Senedd Scraper found 60 MSs and registers of interests for 59 of them. (As of June 2021, these should both ideally be 60).
 
 [You can view all these registers in a single table here.](interests.csv)
 
 # Land and property
 
-Of the 60 registers found, 22 mentioned some sort of interest in land or property and 9 mentioned tenants or renting in that context.
+Of the 59 registers found, 21 mentioned some sort of interest in land or property and 9 mentioned tenants or renting in that context.
 
 | Name                 | Party              | Interest                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------------- | :----------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Andrew RT Davies     | Welsh Conservative | Farmland and building in the Vale of Glamorgan                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Darren Millar        | Welsh Conservative | Residential property in Kinmel Bay jointly owned by Member and spouse.<br>Residential property in Cardiff jointly owned by Member and spouse.<br>1 residential property in Towyn part owned by Member and spouse.                                                                                                                                                                                                                                                                                                                                   |
 | David Rees           | Welsh Labour       | Residential Property in Cwmafan, Port Talbot                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Janet Finch-Saunders | Welsh Conservative | Jointly own 2 residential properties in Conwy County.<br>Jointly own 4 retail properties in Conwy County.<br>Jointly own a residential/holiday-let property in Menai Bridge with my daughter.                                                                                                                                                                                                                                                                                                                                                       |
