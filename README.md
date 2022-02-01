@@ -2,15 +2,15 @@
 
 This repository contains Senedd Members’ registers of interests, fetched from [senedd.wales](https://senedd.wales/).
 
-It was last updated 17:04 GMT on 31 January 2022.
+It was last updated 17:12 GMT on 01 February 2022.
 
-The Senedd Scraper found 60 MSs and registers of interests for 59 of them. (As of June 2021, these should both ideally be 60).
+The Senedd Scraper found 60 MSs and registers of interests for 60 of them. (As of June 2021, these should both ideally be 60).
 
 [You can view all these registers in a single table here.](interests.csv)
 
 # Land and property
 
-Of the 59 registers found, 21 mentioned some sort of interest in land or property and 9 mentioned tenants or renting in that context.
+Of the 60 registers found, 22 mentioned some sort of interest in land or property and 9 mentioned tenants or renting in that context.
 
 | Name                 | Party              | Interest                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | :------------------- | :----------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,3 +35,4 @@ Of the 59 registers found, 21 mentioned some sort of interest in land or propert
 | Rhys ab Owen         | Plaid Cymru        | One residential rented property in Cardiff                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Sioned Williams      | Plaid Cymru        | Part ownership of a residential property in Caerphilly, which is used by a family member.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | Buffy Williams       | Welsh Labour       | Residential rented properties in the Rhondda. My husband is a property developer and we can jointly own up to, but no more than two properties at any one time (excluding my own home). These properties are renovated and sold. I will update this document regularly to reflect the number of properties in our joint ownership.<br>Canolfan Pentre CIO Lease - I am the third signatory on a 25 year lease that began in 2016. The landlord of this building is Rhondda Cynon Taf County Borough Council. I receive no income from this charity. |
+| Sam Rowlands         | Welsh Conservative | Residential property in Abergele                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
