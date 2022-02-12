@@ -1,3 +1,5 @@
+See https://github.com/stupidpupil/senedd_scraper/tree/registers_of_interests for daily updates to registers of interests.
+
 ```
 devtools::load_all()
 members <- get_senedd_members()
