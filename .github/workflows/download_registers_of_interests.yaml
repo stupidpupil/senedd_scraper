@@ -52,6 +52,20 @@ jobs:
             left_join(members %>% select(SeneddID, Name, Party)) %>% 
             select(SeneddID, Name, Party, everything()) %>% 
             write_csv("registers_of_interests/interests.csv")
+
+          interests <- interests %>%
+            filter(str_trim(EntrySubject) != 'None')
+
+          senedd_ids <- interests %>% pull(SeneddID) %>% unique()
+
+          for(sid in senedd_ids){
+            sid_path <- paste0("registers_of_interests/registers_by_senedd_id/", sid, ".csv")
+
+            interests %>% 
+              filter(SeneddID == sid) %>%
+              write_csv(sid_path)
+          }
+
           members %>% 
             do_gooder_table_from_senedd_members() %>% 
             write_csv("registers_of_interests/members_for_do_gooder.csv")
