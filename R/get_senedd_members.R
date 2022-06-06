@@ -41,7 +41,17 @@ get_senedd_members <- function(extra_info=FALSE){
   for (mi in 1:nrow(members)) {
     print(paste0("Fetching extra info for ", members[[mi, 'Name']], "…"))
 
-    inf <- get_info_from_ms_page_url(members[[mi, 'LinkURL']], members[[mi, 'LinkURLWelsh']]) 
+    inf <- NULL
+    attempt <- 0
+
+    while(is.null(inf) && attempt <= 3){
+      attempt <- attempt + 1
+      try(
+        inf <- get_info_from_ms_page_url(members[[mi, 'LinkURL']], members[[mi, 'LinkURLWelsh']]) 
+      )
+    }
+    
+    stopifnot(!is.null(inf))
     
     inf_fields <- c(
       'Titles', 'TitlesWelsh',
