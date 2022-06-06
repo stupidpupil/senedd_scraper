@@ -17,7 +17,7 @@ get_senedd_members <- function(extra_info=FALSE){
     )
   }
 
-  member_els <- %>% 
+  member_els <- member_list_html %>% 
     html_nodes(".person-search-result-item")
 
   clean_up_party <- function(party){
