@@ -1,4 +1,4 @@
-See https://github.com/stupidpupil/senedd_scraper/tree/registers_of_interests for daily updates to registers of interests.
+See https://github.com/stupidpupil/senedd_scraper/tree/registers_of_interests for daily updates to registers of interests and other machine-readable datasets.
 
 ```
 devtools::load_all()
