@@ -44,13 +44,19 @@ get_senedd_members <- function(extra_info=FALSE){
     inf <- NULL
     attempt <- 0
 
-    while(is.null(inf) && attempt <= 3){
+    while(is.null(inf) && attempt <= 5){
       attempt <- attempt + 1
+
+      if(attempt > 1){
+        message("Retrying after a delay of three seconds...")
+        Sys.sleep(3)
+      }
+
       try(
         inf <- get_info_from_ms_page_url(members[[mi, 'LinkURL']], members[[mi, 'LinkURLWelsh']]) 
       )
     }
-    
+
     stopifnot(!is.null(inf))
     
     inf_fields <- c(
