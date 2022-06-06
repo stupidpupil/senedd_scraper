@@ -1,7 +1,23 @@
 get_senedd_members <- function(extra_info=FALSE){
   ret <- tibble()
 
-  member_els <- read_html("https://senedd.wales/find-a-member-of-the-senedd/?VW=Table&PageSize=10000&Page=1&Culture=en-GB&IsSubSearch=False&IsPostcodeCrossConstituency=False&Postcode=&Name=&ShowAll=true&Region=&Constituency=&Constituency=&Constituency=&Constituency=&Constituency=&PartyFilterType=party&PoliticalParty=&PoliticalPartyGroup=&partyValueName=") %>% 
+  member_list_html <- NULL
+  attempt <- 0
+
+  while(is.null(member_list_html) && attempt <= 5){
+    attempt <- attempt + 1
+
+    if(attempt > 1){
+      message("Retrying after a delay of three seconds...")
+      Sys.sleep(3)
+    }
+
+    try(
+      member_list_html <- read_html("https://senedd.wales/find-a-member-of-the-senedd/?VW=Table&PageSize=10000&Page=1&Culture=en-GB&IsSubSearch=False&IsPostcodeCrossConstituency=False&Postcode=&Name=&ShowAll=true&Region=&Constituency=&Constituency=&Constituency=&Constituency=&Constituency=&PartyFilterType=party&PoliticalParty=&PoliticalPartyGroup=&partyValueName=") 
+    )
+  }
+
+  member_els <- %>% 
     html_nodes(".person-search-result-item")
 
   clean_up_party <- function(party){
