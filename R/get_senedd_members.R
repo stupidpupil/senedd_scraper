@@ -31,9 +31,9 @@ get_senedd_members <- function(extra_info=FALSE){
 
 
     ret <- ret %>% bind_rows(tibble(
-      Name = (item_text_nodes %>% nth(1) %>% html_text() %>% str_match("^(.+?) MS"))[,2],
-      Party = item_text_nodes %>% nth(3) %>% html_text() %>% clean_up_party,
-      ConstituencyOrRegion = item_text_nodes %>% nth(2) %>% html_text(),
+      Name = (item_text_nodes |> (\(x) x[[1]])() %>% html_text() %>% str_match("^(.+?) MS"))[,2],
+      Party = item_text_nodes |> (\(x) x[[3]])() %>% html_text() %>% clean_up_party,
+      ConstituencyOrRegion = item_text_nodes |> (\(x) x[[2]])() %>% html_text(),
       PhotographURL = me %>% html_node("img") %>% html_attr("src"),
       SeneddID = (PhotographURL %>% str_match("/Info(\\d{8})/"))[,2] %>% as.integer %>% as.character(),
       RegisterURL = paste0("https://business.senedd.wales/mgRofI.aspx?UID=", SeneddID),
