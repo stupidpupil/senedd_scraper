@@ -1,6 +1,6 @@
 SeneddID,CategoryCaption,CategoryID,EntryInRespectOf,EntrySubject
 5053,"2. Category 2: Remunerated employment, office, profession etc",2,Spouse,Employed as a Radiographer for Powys Local Health Board and Swansea Bay University Health Board
-5053,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Occasional survey work of no more than one hour once a month (SO 4.3 - Band 1 - Less than 5 hours per week)
+5053,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Occasional survey work of no more than one hour once a month (SO 4.3 - Band 1 - Less than 5 hours per week) (ceased)
 5053,6. Category 6: Financial sponsorship,6,Member,"All 2021 Senedd election expenses met by Ogmore Constituency Labour Party, with donations from GMB, Unite Wales, Co-operative Party, J Joshi, R Joshi and S Joshi and individual party members and supporters"
 5053,8. Category 8: Land and property,8,Member and Spouse,Joint ownership of a residential property in the Swansea area from which rental income is derived
 5053,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member of SERA Executive - Labour's Environmental Campaign organisation (ceased)
@@ -26,8 +26,10 @@ SeneddID,CategoryCaption,CategoryID,EntryInRespectOf,EntrySubject
 5053,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Chair - Strategic Forum on Regional Investment in Wales (SFRIW) (ceased)
 5053,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron - Caeau Men's Shed
 5053,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Chair - Review of National Coastal Path Group (ceased)
+5053,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Patron - Community Furniture Aid
 5053,11. Record of membership of societies,11,NA,Member - Co-operative Party
 5053,11. Record of membership of societies,11,NA,Member - Fabians
 5053,11. Record of membership of societies,11,NA,Member - GMB
 5053,11. Record of membership of societies,11,NA,Honorary Member - Maesteg Rotary Club
 5053,11. Record of membership of societies,11,NA,Member - UNITE
+5053,11. Record of membership of societies,11,NA,Member - SERA
