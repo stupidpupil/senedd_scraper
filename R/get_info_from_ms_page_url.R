@@ -1,5 +1,5 @@
 get_info_from_ms_page_url <- function(ms_page_url, ms_welsh_page_url=NULL){
-  ms_page <- read_html(ms_page_url)
+  ms_page <- get_html_for_url(ms_page_url)
 
   ret_info <- list()
 

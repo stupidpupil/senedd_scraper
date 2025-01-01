@@ -13,7 +13,7 @@ get_senedd_members <- function(extra_info=FALSE){
     }
 
     try(
-      member_list_html <- read_html("https://senedd.wales/find-a-member-of-the-senedd/?VW=Table&PageSize=10000&Page=1&Culture=en-GB&IsSubSearch=False&IsPostcodeCrossConstituency=False&Postcode=&Name=&ShowAll=true&Region=&Constituency=&Constituency=&Constituency=&Constituency=&Constituency=&PartyFilterType=party&PoliticalParty=&PoliticalPartyGroup=&partyValueName=") 
+      member_list_html <- get_html_for_url("https://senedd.wales/find-a-member-of-the-senedd/?isActiveMs=true", 0.5) 
     )
   }
 
@@ -42,6 +42,7 @@ get_senedd_members <- function(extra_info=FALSE){
       LinkURLWelsh = paste0("https://senedd.cymru", LinkURLPath %>% str_replace_all("/people/", "/pobl/")  %>% str_replace_all("-ms/", "-as/"))
     ))
   }
+
 
   ret <- ret %>% mutate(
     Constituency = if_else(ConstituencyOrRegion %in% senedd_constituencies()$SeneddConstituencyName, ConstituencyOrRegion, NA_character_),

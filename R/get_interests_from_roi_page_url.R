@@ -1,6 +1,6 @@
 get_interests_from_roi_page_url = function(roi_page_url){
 
-  roi_page <- read_html(roi_page_url)
+  roi_page <- get_html_for_url(roi_page_url)
   roi_tables <- roi_page %>% html_nodes(".mgInterestsTable")
 
   ret <- tibble(
