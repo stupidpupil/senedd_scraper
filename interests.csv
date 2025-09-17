@@ -39,6 +39,7 @@ SeneddID,Name,Party,CategoryCaption,CategoryID,EntryInRespectOf,EntrySubject
 269,Mabon ap Gwynfor,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,A session for two shooting clay pigeons at the Dyfi Valley Shooting Range by the British Association for Shooting and Conservation
 269,Mabon ap Gwynfor,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member and dependent child,"Two tickets in the S4C box for the Wales v Italy Six Nations men’s rugby match on 16 March 2024, provided by S4C."
 269,Mabon ap Gwynfor,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Three tickets from the Football Association of Wales for Wales v Sweden women's football match at the Racecourse Ground on 25 February 2025.
+269,Mabon ap Gwynfor,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member and dependent child,"Member was invited to take part in and deliver a speech at the Institute for Cultural Diplomacy in Edinburgh from 1-4 September, with politicians and former statesmen from across the world, including Bertie Ahern, Ireland; Gjorge Ivanov, North Macedonia; Ann Linde, Sweden, and others. Accommodation for three nights, food and transport provided for Member and his son."
 269,Mabon ap Gwynfor,Plaid Cymru,5. Category 5: Remuneration or other material benefit,5,None,None
 269,Mabon ap Gwynfor,Plaid Cymru,6. Category 6: Financial sponsorship,6,Member,"All costs for the 2021 election campaign were paid for by Plaid Cymru, Dwyfor Meirionnydd."
 269,Mabon ap Gwynfor,Plaid Cymru,7. Category 7: Overseas visits,7,None,None
@@ -70,6 +71,8 @@ SeneddID,Name,Party,CategoryCaption,CategoryID,EntryInRespectOf,EntrySubject
 2717,Rhun ap Iorwerth,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Ticket and hospitality for the Wales v. Poland football match on 26 March 2024 from the Football Association of Wales.
 2717,Rhun ap Iorwerth,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Ticket and hospitality to the Wales v. Iceland nations league football match from the Football Association of Wales.
 2717,Rhun ap Iorwerth,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Ticket (+1) and hospitality from the Welsh Rugby Union to watch the RGC v Bridgend game on 28 December 2024
+2717,Rhun ap Iorwerth,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Ticket and hospitality to Wales v Canada football match on the 9 September 2025 gifted from the Football Association of Wales.
+2717,Rhun ap Iorwerth,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,"Member was invited to take part in a panel discussion at Green Man Festival (14-16 August) and gifted two festival tickets, one of which has given to his daughter. His wife was also gifted a ticket."
 2717,Rhun ap Iorwerth,Plaid Cymru,5. Category 5: Remuneration or other material benefit,5,None,None
 2717,Rhun ap Iorwerth,Plaid Cymru,6. Category 6: Financial sponsorship,6,Member,The Ynys Môn election costs for 2021 were paid by Plaid  Cymru
 2717,Rhun ap Iorwerth,Plaid Cymru,7. Category 7: Overseas visits,7,Member,"21 February 2024 – Cork, Ireland – to give a lecture at the University of Cork on the relationship between Wales and Ireland. Accommodation and travel covered by the University of Cork."
@@ -811,11 +814,12 @@ Menter Y Felinheli (community benefit company)"
 8687,Joel James,Welsh Conservative,5. Category 5: Remuneration or other material benefit,5,None,None
 8687,Joel James,Welsh Conservative,6. Category 6: Financial sponsorship,6,Member,2021 Senedd election expenses were met by the Welsh Conservative Party
 8687,Joel James,Welsh Conservative,6. Category 6: Financial sponsorship,6,Member,Donation of £500 from Dan Clayton Jones given on the 3 July 2025 for the Member's re-election campaign
+8687,Joel James,Welsh Conservative,6. Category 6: Financial sponsorship,6,Member,Monthly financial donation of £50 a month since December 2024 from Lee Gonzalez for the Member's re-election campaign.
 8687,Joel James,Welsh Conservative,7. Category 7: Overseas visits,7,None,None
 8687,Joel James,Welsh Conservative,8. Category 8: Land and property,8,None,None
 8687,Joel James,Welsh Conservative,9. Category 9: Shareholdings,9,None,None
 8687,Joel James,Welsh Conservative,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,School Governor - Maesybryn Primary School (ceased)
-8687,Joel James,Welsh Conservative,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Chairman and Trustee - Efail Isaf Village Hall Management Committee (Chairmanship ceased on 26 January 2025)
+8687,Joel James,Welsh Conservative,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Chairman and Trustee - Efail Isaf Village Hall Management Committee (Chairmanship ceased on 26 January 2025) (Trusteeship ceased on 11 September 2025)
 8687,Joel James,Welsh Conservative,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Newtown Llantwit Communal Facilities Association
 8687,Joel James,Welsh Conservative,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Trustee - Christmas Evan John Fund
 8687,Joel James,Welsh Conservative,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Llafur: Welsh People's History Society
@@ -823,6 +827,7 @@ Menter Y Felinheli (community benefit company)"
 8687,Joel James,Welsh Conservative,11. Record of membership of societies,11,NA,Member - Rhondda Cynon Taf Conservative Federation
 8687,Joel James,Welsh Conservative,11. Record of membership of societies,11,NA,Member - Chartered Institute of Library and Information Professionals (ceased)
 8687,Joel James,Welsh Conservative,11. Record of membership of societies,11,NA,Member - British Association for Shooting and Conservation
+8687,Joel James,Welsh Conservative,11. Record of membership of societies,11,NA,Member - Cardiff North and West Conservative Federation
 8687,Joel James,Welsh Conservative,12. Record of the employment of family members,12,None,None
 584,Julie James,Welsh Labour,1. Category 1: Directorships,1,Spouse,Director of Flattout Design Limited (electronic engineering design)
 584,Julie James,Welsh Labour,"2. Category 2: Remunerated employment, office, profession etc",2,None,None
@@ -887,7 +892,7 @@ Menter Y Felinheli (community benefit company)"
 4562,Laura Anne Jones,Reform UK,7. Category 7: Overseas visits,7,Member,1 February 2024 – 14 February 2024 – The Falklands Islands - To meet the Falkland Islands Government and Legislative Assembly and to learn about the challenges and future of the islands. To promote the links between Wales and the Falkland Islands and to learn more about Wales's contribution to the history and culture of the islands. All costs covered by the Falkland Islands Government.
 4562,Laura Anne Jones,Reform UK,8. Category 8: Land and property,8,None,None
 4562,Laura Anne Jones,Reform UK,9. Category 9: Shareholdings,9,None,None
-4562,Laura Anne Jones,Reform UK,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,None,None
+4562,Laura Anne Jones,Reform UK,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,Member,Member - Raglan Golf Club
 4562,Laura Anne Jones,Reform UK,11. Record of membership of societies,11,NA,None
 4562,Laura Anne Jones,Reform UK,12. Record of the employment of family members,12,None,None
 8642,Samuel Kurtz,Welsh Conservative,1. Category 1: Directorships,1,Member,Director - Wales Federation of Young Farmers Clubs (SO 4.3 - Band 1 – Less than 5 hours per week) (directorship ceased on 5 November 2022)
@@ -1086,6 +1091,7 @@ Menter Y Felinheli (community benefit company)"
 8579,Peredur Owen Griffiths,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member and partner,Two tickets for the Member and his wife to the Mothers Matter – Ball of Hope 2024 on 14 September 2024. Provided by Heledd Fychan MS.
 8579,Peredur Owen Griffiths,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member and partner,Tickets for a reception and performance of the WNO's Marriage of Figaro at the WMC. Provided by the WNO.
 8579,Peredur Owen Griffiths,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Accommodation at the WLGA Conference in Llandudno because I was a panellist for a main stage event with the Cabinet Secretary and others. A ticket as a guest at the evening dinner included.
+8579,Peredur Owen Griffiths,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,"Member participated in a conference organised by the Institute for Cultural Diplomacy in Edinburgh from 1-3 September 2025, giving a speech on the power of intercultural relationships. The organisers arranged flights, accommodation, meals and a series of speeches and events. The conference was held in Edinburgh Heriot Watt University, the Scottish Parliament and Edinburgh Castle."
 8579,Peredur Owen Griffiths,Plaid Cymru,5. Category 5: Remuneration or other material benefit,5,None,None
 8579,Peredur Owen Griffiths,Plaid Cymru,6. Category 6: Financial sponsorship,6,Candidate,All 2021 election costs were paid for by Plaid Cymru.
 8579,Peredur Owen Griffiths,Plaid Cymru,7. Category 7: Overseas visits,7,Member,"26 May 2022 - Valencia, Spain - To participate in a four-day week summit alongside other politicians and experts - Paid for by the Vice-Ministry of Employment, Valencian Government."
@@ -1109,31 +1115,6 @@ Menter Y Felinheli (community benefit company)"
 4651,Rhianon Passmore,Welsh Labour,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,None,None
 4651,Rhianon Passmore,Welsh Labour,11. Record of membership of societies,11,NA,None
 4651,Rhianon Passmore,Welsh Labour,12. Record of the employment of family members,12,None,None
-5030,Adam Price,Plaid Cymru,1. Category 1: Directorships,1,None,None
-5030,Adam Price,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Royalties for the book ‘Wales – the First and Final Colony’ by Y Lolfa Ltd
-5030,Adam Price,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Partner,Tribunal Judge in the Ministry of Justice
-5030,Adam Price,Plaid Cymru,"2. Category 2: Remunerated employment, office, profession etc",2,Member,Received £600 from ITV Studios Limited & Lifted Entertainment for one recording session for Christmas University Challenge 2022 programme as a contestant. This is not ongoing work - it was one recording session of approximately 3 hours (SO 4.3 -Band 1 - Less than 5 hours per week)
-5030,Adam Price,Plaid Cymru,3. Category 3: Names of clients,3,None,None
-5030,Adam Price,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Hospitality and ticket offered by S4C for Cymru v South Africa game. The Member and a staff member attended.
-5030,Adam Price,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Hospitality and ticket offered by BBC Cymru for Cymru v Australia game. The Member and a guest attended.
-5030,Adam Price,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Hospitality and ticket offered by FAW for Cymru v Austria game on 24 March 2022 (FIFA World Cup Play-Off Semi-Final). The Member and a staff member attended.
-5030,Adam Price,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Hospitality and ticket offered by FAW for Cymru v Ukraine (FIFA World Cup Play-Off Final) on 5 June 2022. The Member and a guest attended.
-5030,Adam Price,Plaid Cymru,"4. Category 4: Gifts, hospitality, material benefit or advantage",4,Member,Pro bono legal advice provided by Cornerstone Barristers regarding the Elections and Elected Bodies (Wales) Bill.
-5030,Adam Price,Plaid Cymru,5. Category 5: Remuneration or other material benefit,5,Member,£200 remuneration received from Silin for appearance as talking head on the BBC documentary on 100 years of Plaid Cymru.
-5030,Adam Price,Plaid Cymru,6. Category 6: Financial sponsorship,6,Candidate,Election 2021 costs paid by Plaid Cymru Carmarthen East and Dinefwr constituency party
-5030,Adam Price,Plaid Cymru,7. Category 7: Overseas visits,7,Member,"12 June 2022 - Catalonia - To take part in discussions under the theme, 'No stepping back: standing for democracy in the 21st century.' - Accommodation and connecting travel covered by Esquerra Republicana for Catalonia Progressive Forum."
-5030,Adam Price,Plaid Cymru,7. Category 7: Overseas visits,7,Member,"Hospitality, accommodation and travel covered by the European Free Alliance for the EFA General Assembly (from 11 May 2022 to 14 May 2022)."
-5030,Adam Price,Plaid Cymru,7. Category 7: Overseas visits,7,Member,"Two nights accommodation, train ticket to Strasbourg and refreshments covered by the European Free Alliance for the EFA Congress on 13 October 2023."
-5030,Adam Price,Plaid Cymru,7. Category 7: Overseas visits,7,Member,9-10 November 2023 – Valencia – meeting with the European Free Alliance to discuss the situation of minority languages. Costs covered by the European Free Alliance.
-5030,Adam Price,Plaid Cymru,7. Category 7: Overseas visits,7,Member,7 – 9 March 2024 – Brussels – European Free Alliance General Assembly. Costs covered by the European Free Alliance.
-5030,Adam Price,Plaid Cymru,7. Category 7: Overseas visits,7,Member,20 – 22 September 2024 – visit to Bilbao to attend Eusko Alkartasuna meeting. Costs covered by the European Free Alliance and Eusko Alkartasuna.
-5030,Adam Price,Plaid Cymru,8. Category 8: Land and property,8,Partner,"Two rental properties, London"
-5030,Adam Price,Plaid Cymru,9. Category 9: Shareholdings,9,None,None
-5030,Adam Price,Plaid Cymru,10. Category 10:Membership/Chairmanship of bodies in receipt of Senedd funds,10,None,None
-5030,Adam Price,Plaid Cymru,11. Record of membership of societies,11,NA,None
-5030,Adam Price,Plaid Cymru,12. Record of the employment of family members,12,Name: Angela Owen Griffiths,Capacity in which employed: Communications Officer for Plaid Cymru Senedd Group
-5030,Adam Price,Plaid Cymru,12. Record of the employment of family members,12,Family Member of: Peredur Owen Griffiths,Date employment commenced: May 2020 (ceased on 16 May 2023)
-5030,Adam Price,Plaid Cymru,12. Record of the employment of family members,12,Relationship to the MS: Spouse,Contracted hours: 37
 241,Jenny Rathbone,Welsh Labour,1. Category 1: Directorships,1,None,None
 241,Jenny Rathbone,Welsh Labour,"2. Category 2: Remunerated employment, office, profession etc",2,Partner,"Member of the Advisory Board - Bute Energy (Development of wind farms in Wales and CSR activities arising from any development). The business is exploring options in Powys, RCT and North Wales but no application has been submitted to date."
 241,Jenny Rathbone,Welsh Labour,3. Category 3: Names of clients,3,None,None
